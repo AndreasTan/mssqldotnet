@@ -163,7 +163,7 @@ namespace RazorPagesContacts
                     string password = Configuration["MSSQL_SA_PASSWORD"];
                     string user = "sa";
                     string dbName = "myContacts";
-                    connectionString = $@"Server={server};Database={dbName};User Id={user};Password={password};";
+                    connectionString = $@"Server={server};Database={dbName};User Id={user};Password={password};trustServerCertificate=true;";
                 }
                     break;
                 default:
